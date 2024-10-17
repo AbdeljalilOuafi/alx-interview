@@ -17,12 +17,12 @@ def minOperations(n):
         return 0
 
     operations = 0
-    num_of_h = 1
+    factor = 2
 
-    for i in range(2, n + 1):
-        if n % i == 0:
-            operations += 2
-            n //= i
-            num_of_h *= i
+    while n > 1:
+        while n % factor == 0:
+            operations += factor
+            n //= factor
+        factor += 1
 
     return operations
