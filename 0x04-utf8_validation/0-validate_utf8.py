@@ -3,6 +3,7 @@
 UTF-8 Validation
 """
 
+
 def validUTF8(data):
     """
     UTF-8 Validation
